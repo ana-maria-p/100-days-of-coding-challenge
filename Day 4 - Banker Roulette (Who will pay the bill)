@@ -1,0 +1,13 @@
+# Split string method
+names_string = input("Give me everybody's names, separated by a comma. ")
+names = names_string.split(", ")
+
+import random
+
+#I want to see how many names are in the list
+the_choice = random.randint(0, len(names) - 1)
+
+#I choose that name from the list
+the_payer = names[the_choice]
+
+print(the_payer)

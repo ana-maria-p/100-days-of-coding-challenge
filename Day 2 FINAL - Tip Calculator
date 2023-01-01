@@ -4,4 +4,4 @@ tip = int(input("What percentage do you want to give as tip?"))
 tip = tip/100 + 1
 number_people = int(input("How many people do you want to split the bill to?")) 
 payable_per_person = round(((bill / number_people) * tip),2)
-print(payable_per_person)
+print(f"Each person should pay: ${payable_per_person}.")

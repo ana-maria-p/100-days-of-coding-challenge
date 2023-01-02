@@ -1,0 +1,15 @@
+#I should have found a way to use the "for" function instead of the "sum" and "len" ones.
+
+student_heights = input("Input a list of student heights ").split()
+for n in range(0, len(student_heights)):
+  student_heights[n] = int(student_heights[n])
+  
+total_h = 0
+for n in student_heights:
+  total_h += n
+number_students = 0
+for n in student_heights:
+  number_students += 1 
+
+average = round(float(total_h / number_students))
+print(average)
